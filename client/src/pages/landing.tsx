@@ -156,7 +156,7 @@ export default function LandingPage() {
               <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Shield className="text-red-500 h-8 w-8" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-4">Security & audit anxiety (CIS + access controls)</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-4">Security & audit anxiety</h3>
               <p className="text-muted-foreground">You're concerned that a hidden misconfiguration could lead to a security breach or failed compliance audit.</p>
             </Card>
             
