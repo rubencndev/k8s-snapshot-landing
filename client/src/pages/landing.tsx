@@ -71,9 +71,7 @@ export default function LandingPage() {
       <section className="hero-gradient py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-              Cut $10k+ from Your Kubernetes Bill in 1 Week — or Your Money Back
-            </h1>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">Cut $10k+ from Your Kubernetes Bill in 1 Week - or Your Money Back</h1>
             <p className="text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">Your cloud costs keep climbing. Security audits feel risky. Engineers are firefighting instead of building. Snapshot fixes that in just 1 week.</p>
             
             {/* CTA Buttons */}
