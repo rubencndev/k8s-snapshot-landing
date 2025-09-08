@@ -66,7 +66,6 @@ export default function LandingPage() {
           </div>
         </div>
       </header>
-
       {/* Hero Section */}
       <section className="hero-gradient py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,9 +73,7 @@ export default function LandingPage() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
               Cut $10k+ from Your Kubernetes Bill in 1 Week — or Your Money Back
             </h1>
-            <p className="text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              For SMEs running Kubernetes on AWS, GCP, or Azure (50–500 nodes). Stop overspending, close hidden security gaps, and stabilize workloads — fast.
-            </p>
+            <p className="text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">For SMEs running Kubernetes on AWS, GCP, or Azure. Stop overspending, close hidden security gaps, and stabilize workloads — fast.</p>
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -130,7 +127,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Pain Agitation Section */}
       <section className="py-16 lg:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -180,7 +176,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Solution Section */}
       <section className="py-16 lg:py-20 bg-muted">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -228,7 +223,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Deliverables Section */}
       <section className="py-16 lg:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -306,7 +300,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* How It Works Section */}
       <section className="py-16 lg:py-20 bg-muted">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -365,7 +358,6 @@ export default function LandingPage() {
           </Card>
         </div>
       </section>
-
       {/* Credibility Section */}
       <section className="py-16 lg:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -404,7 +396,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Risk Reversal Section */}
       <section className="py-16 lg:py-20 bg-muted">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -423,7 +414,6 @@ export default function LandingPage() {
           </Card>
         </div>
       </section>
-
       {/* Pricing Section */}
       <section className="py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -457,7 +447,6 @@ export default function LandingPage() {
           </Button>
         </div>
       </section>
-
       {/* FAQ Section */}
       <section className="py-16 lg:py-20 bg-muted">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -506,7 +495,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Final CTA Section */}
       <section className="py-16 lg:py-20 hero-gradient">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -531,7 +519,6 @@ export default function LandingPage() {
           </p>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="bg-card border-t border-border py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
