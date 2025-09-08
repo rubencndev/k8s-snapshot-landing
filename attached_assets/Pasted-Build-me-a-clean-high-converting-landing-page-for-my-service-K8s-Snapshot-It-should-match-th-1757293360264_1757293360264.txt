@@ -1,0 +1,110 @@
+Build me a clean, high-converting landing page for my service **K8s Snapshot**.  
+It should match the design style of my **CloudNative Inc. logo** and my current sales slick page (light background, professional, CloudNative blue `#0B5D94` as primary color, soft gray dividers, rounded pills, and minimal shadows).  
+
+The landing page must follow a direct-response marketer structure, with multiple CTAs, a clear USP, and strong risk reversal.
+
+---
+
+## Sections & Copy
+
+### 1. Hero (USP above the fold)
+- Headline: “Cut $10k+ from Your Kubernetes Bill in 1 Week — or Your Money Back”
+- Subheadline: “For SMEs running Kubernetes on AWS, GCP, or Azure (50–500 nodes). Stop overspending, close hidden security gaps, and stabilize workloads — fast.”
+- Buttons:
+  - Primary (blue): “Book a 15-min Snapshot Call”
+  - Secondary (outlined): “See Sample Report”
+- Badges / credibility strip: “8+ yrs K8s experience • Ex-Red Hat • Trusted by SMEs on AWS/GCP/Azure”
+- Pain bullets (with green check icons):
+  - Cloud bills growing unpredictably
+  - Security & audit anxiety (CIS/RBAC)
+  - Engineers firefighting instead of shipping
+
+---
+
+### 2. Pain (Agitate)
+- Heading: “Are These Kubernetes Challenges Costing You?”
+- Repeat the 3 pain bullets in larger text with icons.
+- CTA: “Yes, these sound familiar — show me how Snapshot works.”
+
+---
+
+### 3. Solution (3 Pillars)
+- Heading: “Our 3-Pillar Diagnostic Process”
+- Three icons with short blurbs:
+  - **Save on Costs** – Find idle assets & over-provisioned workloads.
+  - **Close Security Gaps** – CIS benchmark + misconfiguration audit.
+  - **Stabilize Performance** – Rightsizing, probes, bottleneck checks.
+- CTA: “Book Your Snapshot Slot”
+
+---
+
+### 4. Deliverables (What They Get)
+- Heading: “What You’ll Get in Just 1 Week”
+- Deliverables grid:
+  - Executive-ready PDF/HTML report with prioritized findings.
+  - Top 5 issues & savings opportunities.
+  - Technical evidence bundle (Kubecost, Goldilocks, Kube-bench, Kube-score).
+  - Remediation steps with owner + copy-paste fixes.
+- Add a blurred screenshot placeholder for “Sample Report.”
+
+---
+
+### 5. How It Works
+- Heading: “How It Works”
+- 3 steps with icons:
+  1. Kickoff (Mon) – 30-min call to align scope.
+  2. Analysis (Tue–Thu) – You run collectors, we analyze results.
+  3. Readout (Fri) – 45-min exec briefing + action plan.
+- Note under steps: “Zero access required — your team runs a simple one-liner job.”
+
+---
+
+### 6. Proof & Credibility
+- Heading: “Trusted Kubernetes Expertise”
+- Placeholder space for testimonials / logos.
+- If no testimonials yet, use badges: “Ex-Red Hat • 8+ yrs experience • AWS/GCP/Azure SMEs”
+
+---
+
+### 7. Risk Reversal (Guarantee)
+- Boxed section with blue border:
+  - Heading: “Risk-Free Guarantee”
+  - Copy: “If we don’t uncover $10k+ in annualized savings or at least one critical security gap, we refund 100% of your fee. No risk, no hidden catches.”
+
+---
+
+### 8. Pricing (Investment)
+- Heading: “Simple, Fixed-Fee Engagement”
+- Copy: “No hidden costs. No per-node pricing. Just a flat fee.”
+- Price: “CA $4,950 (US $3,750)”
+- CTA: “Reserve Your Snapshot Slot Today”
+
+---
+
+### 9. FAQ
+Include 3 common objections:
+1. **What access do you need?** – Zero access; just a one-liner script.
+2. **Will this slow my team down?** – <2 hours total effort across the week.
+3. **What if you find nothing?** – 100% refund guaranteed.
+
+---
+
+### 10. Final CTA (Close Strong)
+- Heading: “Ready to Cut Costs and Close Gaps in Just 1 Week?”
+- Large button: “Book Your 15-min Snapshot Call”
+
+---
+
+## Design Notes
+- Primary color: `#0B5D94` (CloudNative blue).
+- Accent color: green `#19a86b` for success checks and dots.
+- Background: very light gray/blue gradient like the slick page.
+- Font: clean sans-serif (Inter or similar).
+- Layout: centered, wide sections, no card box around hero.
+- Buttons: flat style, no heavy shadows.
+- Dividers: thin gray lines, subtle.
+- Icons: simple line-style for checks, shield, chart, etc.
+
+---
+
+Generate this as a **full landing page layout** with clean HTML and modern CSS (flexbox/grid). Keep it minimal and conversion-focused.
