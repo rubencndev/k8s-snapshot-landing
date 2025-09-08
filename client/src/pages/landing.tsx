@@ -77,7 +77,7 @@ export default function LandingPage() {
               <div className="text-center">
                 <Button 
                   onClick={() => handleCTAClick('bookSnapshotCall')}
-                  className="bg-[#4f89a8] text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#176ba2] transition-colors w-full sm:w-auto"
+                  className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#4f89a8] transition-colors w-full sm:w-auto"
                   data-testid="button-hero-book-snapshot-call"
                 >
                   <CalendarCheck className="mr-2 h-5 w-5" />
