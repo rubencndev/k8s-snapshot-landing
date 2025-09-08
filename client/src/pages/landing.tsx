@@ -20,7 +20,7 @@ import {
   HelpCircle,
   CalendarCheck
 } from "lucide-react";
-import logoHorizontal from "@assets/logo_horizontal_1757294697572.png";
+import logoHorizontal from "@assets/logo_horizontal_1_1757295112260.png";
 
 export default function LandingPage() {
   const handleCTAClick = (action: string) => {
@@ -524,13 +524,13 @@ export default function LandingPage() {
       <footer className="bg-card border-t border-border py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="flex items-center justify-center space-x-3 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                <Cloud className="text-primary-foreground h-4 w-4" />
-              </div>
-              <div className="text-lg font-medium text-foreground">
-                Cloud<span className="text-blue-400">native</span> Inc.
-              </div>
+            <div className="flex items-center justify-center mb-4">
+              <img 
+                src={logoHorizontal} 
+                alt="CloudNative Inc." 
+                className="h-6"
+                data-testid="logo-footer"
+              />
             </div>
             <p className="text-muted-foreground mb-4">
               <a href="mailto:snapshot@cloudnativeinc.io" className="text-primary hover:underline">snapshot@cloudnativeinc.io</a> | 
