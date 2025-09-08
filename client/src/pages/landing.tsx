@@ -406,8 +406,11 @@ export default function LandingPage() {
               <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">
                 Risk-Free Guarantee
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                If we don't uncover <strong className="text-foreground">$10k+</strong> in annualized savings or at least <strong className="text-foreground">one critical security gap</strong>, we refund <strong className="text-foreground">100% of your fee</strong>. No risk, no hidden catches.
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                If we don't uncover <strong className="text-foreground">$10k+</strong> in annualized savings or at least <strong className="text-foreground">one critical security gap*</strong>, we refund <strong className="text-foreground">100% of your fee</strong>. No risk, no hidden catches.
+              </p>
+              <p className="text-sm text-muted-foreground">
+                *Excludes non-actionable findings on managed services (e.g., GKE, EKS).
               </p>
             </div>
           </Card>
