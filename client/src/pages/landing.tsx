@@ -91,7 +91,7 @@ export default function LandingPage() {
                 <Button 
                   onClick={() => handleCTAClick('seeSampleReport')}
                   variant="outline"
-                  className="border-2 border-primary text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-colors w-full sm:w-auto"
+                  className="border-2 border-primary text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#176ba2] hover:text-primary-foreground transition-colors w-full sm:w-auto"
                   data-testid="button-hero-see-sample-report"
                 >
                   <FileText className="mr-2 h-5 w-5" />
