@@ -59,7 +59,7 @@ export default function LandingPage() {
             </div>
             <Button 
               onClick={() => handleCTAClick('bookCall')}
-              className="bg-primary text-primary-foreground px-6 py-2 rounded-full font-medium hover:bg-[#1b88cf] transition-colors"
+              className="bg-primary text-primary-foreground px-6 py-2 rounded-full font-medium hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors"
               data-testid="button-header-book-call"
             >Reserve My Snapshot</Button>
           </div>
@@ -77,7 +77,7 @@ export default function LandingPage() {
               <div className="text-center">
                 <Button 
                   onClick={() => handleCTAClick('bookSnapshotCall')}
-                  className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#1b88cf] transition-colors w-full sm:w-auto"
+                  className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors w-full sm:w-auto"
                   data-testid="button-hero-book-snapshot-call"
                 >
                   <CalendarCheck className="mr-2 h-5 w-5" />
@@ -91,7 +91,7 @@ export default function LandingPage() {
                 <Button 
                   onClick={() => handleCTAClick('seeSampleReport')}
                   variant="outline"
-                  className="border-2 border-primary text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#1b88cf] hover:text-primary-foreground transition-colors w-full sm:w-auto"
+                  className="border-2 border-primary text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] hover:text-primary-foreground transition-colors w-full sm:w-auto"
                   data-testid="button-hero-see-sample-report"
                 >
                   <FileText className="mr-2 h-5 w-5" />
@@ -175,7 +175,7 @@ export default function LandingPage() {
           <div className="text-center">
             <Button 
               onClick={() => handleCTAClick('showHowSnapshot')}
-              className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#1b88cf] transition-colors"
+              className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors"
               data-testid="button-pain-show-how-snapshot"
             >Yes - show me how the Snapshot works</Button>
           </div>
@@ -220,7 +220,7 @@ export default function LandingPage() {
           <div className="text-center">
             <Button 
               onClick={() => handleCTAClick('bookSnapshotSlot')}
-              className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#1b88cf] transition-colors"
+              className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors"
               data-testid="button-solution-book-snapshot-slot"
             >
               Book Your Snapshot Slot
@@ -448,7 +448,7 @@ export default function LandingPage() {
           
           <Button 
             onClick={() => handleCTAClick('reserveSnapshotSlot')}
-            className="bg-primary text-primary-foreground px-10 py-4 rounded-full text-xl font-semibold hover:bg-[#1b88cf] transition-colors"
+            className="bg-primary text-primary-foreground px-10 py-4 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors"
             data-testid="button-pricing-reserve-snapshot-slot"
           >
             Reserve Your Snapshot Slot Today
@@ -515,7 +515,7 @@ export default function LandingPage() {
           
           <Button 
             onClick={() => handleCTAClick('bookFinalCall')}
-            className="bg-primary text-primary-foreground px-12 py-5 rounded-full text-xl font-semibold hover:bg-[#1b88cf] transition-colors mb-6"
+            className="bg-primary text-primary-foreground px-12 py-5 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors mb-6"
             data-testid="button-final-book-call"
           >
             <CalendarCheck className="mr-3 h-6 w-6" />
