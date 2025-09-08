@@ -177,7 +177,7 @@ export default function LandingPage() {
               onClick={() => handleCTAClick('showHowSnapshot')}
               className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-colors"
               data-testid="button-pain-show-how-snapshot"
-            >Yes, these sound familiar - show me how Snapshot works</Button>
+            >Yes - show me how the Snapshot works</Button>
           </div>
         </div>
       </section>
