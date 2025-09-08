@@ -75,15 +75,20 @@ export default function LandingPage() {
             <p className="text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">Your cloud costs keep climbing. Security audits feel risky. Engineers are firefighting instead of building. Snapshot fixes that in just 1 week.</p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button 
-                onClick={() => handleCTAClick('bookSnapshotCall')}
-                className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-colors w-full sm:w-auto"
-                data-testid="button-hero-book-snapshot-call"
-              >
-                <CalendarCheck className="mr-2 h-5 w-5" />
-                Book a 15-min Snapshot Call
-              </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
+              <div className="text-center">
+                <Button 
+                  onClick={() => handleCTAClick('bookSnapshotCall')}
+                  className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-colors w-full sm:w-auto"
+                  data-testid="button-hero-book-snapshot-call"
+                >
+                  <CalendarCheck className="mr-2 h-5 w-5" />
+                  Get My Kubernetes Snapshot
+                </Button>
+                <p className="text-sm text-muted-foreground mt-2">
+                  15-min call to see if you qualify
+                </p>
+              </div>
               <Button 
                 onClick={() => handleCTAClick('seeSampleReport')}
                 variant="outline"
@@ -94,6 +99,7 @@ export default function LandingPage() {
                 See Sample Report
               </Button>
             </div>
+            <div className="mb-8"></div>
 
             {/* Credibility Badges */}
             <div className="flex flex-wrap justify-center gap-4 mb-12">
