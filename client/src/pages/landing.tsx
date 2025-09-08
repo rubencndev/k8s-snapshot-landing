@@ -124,7 +124,7 @@ export default function LandingPage() {
               </div>
               <div className="flex items-center bg-card p-4 rounded-lg border border-border">
                 <CheckCircle className="text-accent h-5 w-5 mr-3" />
-                <span className="text-foreground font-medium">Security & audit anxiety (CIS/RBAC)</span>
+                <span className="text-foreground font-medium">Close critical security gaps (CIS + access controls)</span>
               </div>
               <div className="flex items-center bg-card p-4 rounded-lg border border-border">
                 <CheckCircle className="text-accent h-5 w-5 mr-3" />
