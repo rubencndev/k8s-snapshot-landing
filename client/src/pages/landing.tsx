@@ -168,7 +168,7 @@ export default function LandingPage() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">Engineers firefighting instead of shipping</h3>
-              <p className="text-muted-foreground">Your engineering team spends more time firefighting and dealing with instability than shipping new features.</p>
+              <p className="text-muted-foreground">Your team spends more time fixing issues than delivering features.</p>
             </Card>
           </div>
           
