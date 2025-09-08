@@ -59,7 +59,7 @@ export default function LandingPage() {
             </div>
             <Button 
               onClick={() => handleCTAClick('bookCall')}
-              className="bg-primary text-primary-foreground px-6 py-2 rounded-full font-medium hover:bg-[#1a6ba8] transition-colors"
+              className="bg-primary text-primary-foreground px-6 py-2 rounded-full font-medium hover:bg-[#0f6aa0] transition-colors"
               data-testid="button-header-book-call"
             >Reserve My Snapshot</Button>
           </div>
