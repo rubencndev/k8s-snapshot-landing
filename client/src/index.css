@@ -11,7 +11,7 @@
   --popover: hsl(0, 0%, 100%);
   --popover-foreground: hsl(210, 10%, 20%);
   --primary: hsl(206, 85%, 30%);
-  --primary-hover: hsl(206, 85%, 40%);
+  --primary-hover: hsl(206, 85%, 22%);
   --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(210, 40%, 95%);
   --secondary-foreground: hsl(210, 10%, 20%);
@@ -61,7 +61,7 @@
   --popover: hsl(0, 0%, 0%);
   --popover-foreground: hsl(200, 6.6667%, 91.1765%);
   --primary: hsl(206, 85%, 30%);
-  --primary-hover: hsl(206, 85%, 40%);
+  --primary-hover: hsl(206, 85%, 22%);
   --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(195.0000, 15.3846%, 94.9020%);
   --secondary-foreground: hsl(210, 25%, 7.8431%);
