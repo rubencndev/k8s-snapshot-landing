@@ -20,6 +20,7 @@ import {
   HelpCircle,
   CalendarCheck
 } from "lucide-react";
+import logoHorizontal from "@assets/logo_horizontal_1757294697572.png";
 
 export default function LandingPage() {
   const handleCTAClick = (action: string) => {
@@ -48,13 +49,13 @@ export default function LandingPage() {
       <header className="bg-card shadow-sm border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <Cloud className="text-primary-foreground h-5 w-5" />
-              </div>
-              <div className="text-xl font-semibold text-foreground">
-                Cloud<span className="text-blue-400">native</span> <span className="text-sm font-normal text-muted-foreground">Inc.</span>
-              </div>
+            <div className="flex items-center">
+              <img 
+                src={logoHorizontal} 
+                alt="CloudNative Inc." 
+                className="h-8"
+                data-testid="logo-header"
+              />
             </div>
             <Button 
               onClick={() => handleCTAClick('bookCall')}
