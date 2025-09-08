@@ -61,9 +61,7 @@ export default function LandingPage() {
               onClick={() => handleCTAClick('bookCall')}
               className="bg-primary text-primary-foreground px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors"
               data-testid="button-header-book-call"
-            >
-              Book a Call
-            </Button>
+            >Book My Snapshot</Button>
           </div>
         </div>
       </header>
