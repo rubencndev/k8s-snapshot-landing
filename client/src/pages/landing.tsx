@@ -20,7 +20,7 @@ import {
   HelpCircle,
   CalendarCheck
 } from "lucide-react";
-import logoHorizontal from "@assets/logo_horizontal_1_1757295112260.png";
+import logoHorizontal from "@assets/cloudnative_logo_1_1757348518870.png";
 
 export default function LandingPage() {
   const handleCTAClick = (action: string) => {
