@@ -83,9 +83,6 @@ export default function LandingPage() {
                   <CalendarCheck className="mr-2 h-5 w-5" />
                   Get My Kubernetes Snapshot
                 </Button>
-                <p className="text-sm text-muted-foreground mt-2">
-                  15-min call to see if you qualify
-                </p>
               </div>
               <Button 
                 onClick={() => handleCTAClick('seeSampleReport')}
