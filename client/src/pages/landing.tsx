@@ -53,7 +53,7 @@ export default function LandingPage() {
               <img 
                 src={logoHorizontal} 
                 alt="CloudNative Inc." 
-                className="h-12"
+                className="h-8"
                 data-testid="logo-header"
               />
             </div>
@@ -529,7 +529,7 @@ export default function LandingPage() {
               <img 
                 src={logoHorizontal} 
                 alt="CloudNative Inc." 
-                className="h-8"
+                className="h-5"
                 data-testid="logo-footer"
               />
             </div>
