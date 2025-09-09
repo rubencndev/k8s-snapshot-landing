@@ -433,9 +433,16 @@ export default function LandingPage() {
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               For a limited time, we're offering the first <strong className="text-foreground">3 customers</strong> a reduced fee of <strong className="text-foreground">CA $2,950 (US $2,250)</strong> in exchange for feedback and a testimonial.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               Standard price is CA $4,950 (US $3,750) - lock in this early adopter rate and be among the first to uncover $10k+ in Kubernetes savings and critical security fixes.
             </p>
+            <Button 
+              onClick={() => handleCTAClick('reserveEarlyAdopterSlot')}
+              className="bg-primary text-primary-foreground px-10 py-4 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors"
+              data-testid="button-early-adopter-reserve"
+            >
+              Reserve at CA $2,950
+            </Button>
           </Card>
         </div>
       </section>
@@ -465,11 +472,15 @@ export default function LandingPage() {
           
           <Button 
             onClick={() => handleCTAClick('reserveSnapshotSlot')}
-            className="bg-primary text-primary-foreground px-10 py-4 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors"
+            className="bg-primary text-primary-foreground px-10 py-4 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors mb-4"
             data-testid="button-pricing-reserve-snapshot-slot"
           >
             Reserve Your Snapshot Slot Today
           </Button>
+          
+          <p className="text-sm text-muted-foreground">
+            Early Adopter slots (CA $2,950) still available - see above.
+          </p>
         </div>
       </section>
       {/* FAQ Section */}
