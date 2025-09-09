@@ -349,7 +349,7 @@ export default function LandingPage() {
                 <BarChart3 className="text-primary h-6 w-6 mr-3" />
                 <h3 className="text-xl font-semibold text-foreground">Readout (Fri)</h3>
               </div>
-              <p className="text-muted-foreground">45-min exec briefing with prioritized action plan.</p>
+              <p className="text-muted-foreground">45-min exec briefing where we walk through your prioritized savings, security gaps, and stability fixes.</p>
             </div>
           </div>
           
