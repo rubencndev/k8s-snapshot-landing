@@ -457,7 +457,7 @@ export default function LandingPage() {
           
           <Button 
             onClick={() => handleCTAClick('reserveSnapshotSlot')}
-            className="bg-primary text-primary-foreground px-10 py-4 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors mb-4"
+            className="bg-primary text-primary-foreground px-10 py-4 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors mb-2"
             data-testid="button-pricing-reserve-snapshot-slot"
           >
             Reserve Your Snapshot Slot Today
