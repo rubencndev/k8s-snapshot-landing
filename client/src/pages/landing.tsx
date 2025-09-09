@@ -470,7 +470,7 @@ export default function LandingPage() {
       </section>
       
       {/* Early Adopter Section */}
-      <section className="py-16 lg:py-20">
+      <section className="pt-4 pb-16 lg:pt-6 lg:pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="bg-gradient-to-r from-yellow-50 to-orange-50 p-8 lg:p-12 rounded-2xl border-2 border-yellow-300 text-center">
             <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
