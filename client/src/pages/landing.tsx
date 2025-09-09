@@ -149,7 +149,7 @@ export default function LandingPage() {
                 <TrendingUp className="text-red-500 h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">Cloud bills growing unpredictably</h3>
-              <p className="text-muted-foreground">Your Kubernetes costs are spiraling out of control with little visibility into what's actually driving the expense.</p>
+              <p className="text-muted-foreground">Your Kubernetes costs are spiraling with no visibility into what's driving the expense.</p>
             </Card>
             
             <Card className="text-center p-8 bg-card rounded-xl border border-border">
