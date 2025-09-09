@@ -31,6 +31,7 @@ export default function LandingPage() {
       case 'bookSnapshotCall':
       case 'bookSnapshotSlot':
       case 'reserveSnapshotSlot':
+      case 'reserveEarlyAdopterSlot':
       case 'bookFinalCall':
         alert('Booking functionality would redirect to calendar booking system');
         break;
@@ -65,6 +66,7 @@ export default function LandingPage() {
           </div>
         </div>
       </header>
+      
       {/* Hero Section */}
       <section className="hero-gradient py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -134,6 +136,7 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+      
       {/* Pain Agitation Section */}
       <section className="py-16 lg:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -149,7 +152,7 @@ export default function LandingPage() {
                 <TrendingUp className="text-red-500 h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">Cloud bills growing unpredictably</h3>
-              <p className="text-muted-foreground">Your Kubernetes costs are spiraling with no visibility into what's driving the expense.</p>
+              <p className="text-muted-foreground">Your Kubernetes costs are spiraling out of control with little visibility into what's actually driving the expense.</p>
             </Card>
             
             <Card className="text-center p-8 bg-card rounded-xl border border-border">
@@ -177,10 +180,11 @@ export default function LandingPage() {
               onClick={() => handleCTAClick('showHowSnapshot')}
               className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors"
               data-testid="button-pain-show-how-snapshot"
-            >Yes - show me how Snapshot works</Button>
+            >Yes - show me how the Snapshot works</Button>
           </div>
         </div>
       </section>
+      
       {/* Solution Section */}
       <section className="py-16 lg:py-20 bg-muted">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -228,6 +232,7 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+      
       {/* Deliverables Section */}
       <section className="py-16 lg:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -297,12 +302,15 @@ export default function LandingPage() {
                   onClick={() => handleCTAClick('viewSampleReport')}
                   className="text-primary hover:underline font-medium"
                   data-testid="button-deliverables-view-sample-report"
-                >See a Real Example Report →</Button>
+                >
+                  View Full Sample Report →
+                </Button>
               </Card>
             </div>
           </div>
         </div>
       </section>
+      
       {/* How It Works Section */}
       <section className="py-16 lg:py-20 bg-muted">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -361,6 +369,7 @@ export default function LandingPage() {
           </Card>
         </div>
       </section>
+      
       {/* Credibility Section */}
       <section className="py-16 lg:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -399,6 +408,7 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+      
       {/* Risk Reversal Section */}
       <section className="py-16 lg:py-20 bg-muted">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -420,32 +430,7 @@ export default function LandingPage() {
           </Card>
         </div>
       </section>
-      {/* Early Adopter Section */}
-      <section className="py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="bg-gradient-to-r from-yellow-50 to-orange-50 p-8 lg:p-12 rounded-2xl border-2 border-yellow-300 text-center">
-            <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Star className="text-yellow-800 h-8 w-8" />
-            </div>
-            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">
-              Early Adopter Special
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              For a limited time, we're offering the first <strong className="text-foreground">3 customers</strong> a reduced fee of <strong className="text-foreground">CA $2,950 (US $2,250)</strong> in exchange for feedback and a testimonial.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Standard price is CA $4,950 (US $3,750) - lock in this early adopter rate and be among the first to uncover $10k+ in Kubernetes savings and critical security fixes.
-            </p>
-            <Button 
-              onClick={() => handleCTAClick('reserveEarlyAdopterSlot')}
-              className="bg-primary text-primary-foreground px-10 py-4 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors"
-              data-testid="button-early-adopter-reserve"
-            >
-              Reserve at CA $2,950
-            </Button>
-          </Card>
-        </div>
-      </section>
+      
       {/* Pricing Section */}
       <section className="py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -479,10 +464,38 @@ export default function LandingPage() {
           </Button>
           
           <p className="text-sm text-muted-foreground">
-            Early Adopter slots (CA $2,950) still available - see above.
+            Early Adopter slots (CA $2,950) still available - see below.
           </p>
         </div>
       </section>
+      
+      {/* Early Adopter Section */}
+      <section className="py-16 lg:py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Card className="bg-gradient-to-r from-yellow-50 to-orange-50 p-8 lg:p-12 rounded-2xl border-2 border-yellow-300 text-center">
+            <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Star className="text-yellow-800 h-8 w-8" />
+            </div>
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">
+              Early Adopter Special
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+              For a limited time, we're offering the first <strong className="text-foreground">3 customers</strong> a reduced fee of <strong className="text-foreground">CA $2,950 (US $2,250)</strong> in exchange for feedback and a testimonial.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+              Standard price is CA $4,950 (US $3,750) - lock in this early adopter rate and be among the first to uncover $10k+ in Kubernetes savings and critical security fixes.
+            </p>
+            <Button 
+              onClick={() => handleCTAClick('reserveEarlyAdopterSlot')}
+              className="bg-primary text-primary-foreground px-10 py-4 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors"
+              data-testid="button-early-adopter-reserve"
+            >
+              Reserve at CA $2,950
+            </Button>
+          </Card>
+        </div>
+      </section>
+      
       {/* FAQ Section */}
       <section className="py-16 lg:py-20 bg-muted">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -531,6 +544,7 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+      
       {/* Final CTA Section */}
       <section className="py-16 lg:py-20 hero-gradient">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -555,6 +569,7 @@ export default function LandingPage() {
           </p>
         </div>
       </section>
+      
       {/* Footer */}
       <footer className="bg-card border-t border-border py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
