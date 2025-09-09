@@ -336,7 +336,7 @@ export default function LandingPage() {
                 <Settings className="text-primary h-6 w-6 mr-3" />
                 <h3 className="text-xl font-semibold text-foreground">Analysis (Tue–Thu)</h3>
               </div>
-              <p className="text-muted-foreground">Run tooling, synthesize findings, prep report. You run collectors, we analyze results.</p>
+              <p className="text-muted-foreground">Run tooling, synthesize findings, prep report. You run collectors, we handle the heavy lifting.</p>
             </div>
             
             <div className="text-center">
