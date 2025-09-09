@@ -420,6 +420,25 @@ export default function LandingPage() {
           </Card>
         </div>
       </section>
+      {/* Early Adopter Section */}
+      <section className="py-16 lg:py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Card className="bg-gradient-to-r from-yellow-50 to-orange-50 p-8 lg:p-12 rounded-2xl border-2 border-yellow-300 text-center">
+            <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Star className="text-yellow-800 h-8 w-8" />
+            </div>
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">
+              Early Adopter Special
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+              For a limited time, we're offering the first <strong className="text-foreground">3 customers</strong> a reduced fee of <strong className="text-foreground">CA $2,950 (US $2,250)</strong> in exchange for feedback and a testimonial.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Standard price is CA $4,950 (US $3,750) - lock in this early adopter rate and be among the first to uncover $10k+ in Kubernetes savings and critical security fixes.
+            </p>
+          </Card>
+        </div>
+      </section>
       {/* Pricing Section */}
       <section className="py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
