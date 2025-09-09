@@ -297,9 +297,7 @@ export default function LandingPage() {
                   onClick={() => handleCTAClick('viewSampleReport')}
                   className="text-primary hover:underline font-medium"
                   data-testid="button-deliverables-view-sample-report"
-                >
-                  View Full Sample Report →
-                </Button>
+                >See a Real Example Report →</Button>
               </Card>
             </div>
           </div>
