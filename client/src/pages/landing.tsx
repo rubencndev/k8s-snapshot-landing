@@ -541,6 +541,18 @@ export default function LandingPage() {
                 </div>
               </div>
             </Card>
+            
+            <Card className="bg-card p-6 rounded-xl border border-border">
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <Wrench className="text-primary-foreground h-4 w-4" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-foreground mb-2">How is this different from just using open-source tools ourselves?</h3>
+                  <p className="text-muted-foreground">You could, but the real value isn't in running the tools—it's in the expert analysis. We correlate the data across cost, security, and performance to create a prioritized, business-focused action plan. We compress months of internal effort and analysis into one week, delivering a clear path to savings and stability.</p>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
