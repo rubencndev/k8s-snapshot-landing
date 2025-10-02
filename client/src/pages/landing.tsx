@@ -72,7 +72,10 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">Cut $10k+ from Your Kubernetes Bill in 1 Week - or Your Money Back</h1>
-            <p className="text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">Your cloud costs keep climbing. Security audits feel risky. Engineers are firefighting instead of building. Snapshot fixes that in just 1 week.</p>
+            <p className="text-xl lg:text-2xl text-muted-foreground mb-4 leading-relaxed">Your cloud costs keep climbing. Security audits feel risky. Engineers are firefighting instead of building. Snapshot fixes that in just 1 week.</p>
+            <p className="text-lg text-muted-foreground mb-8 font-medium">
+              For Series A/B startups and SMBs running 10-100 Kubernetes nodes on AWS, GCP, or Azure
+            </p>
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-start mb-12">
@@ -83,10 +86,10 @@ export default function LandingPage() {
                   data-testid="button-hero-book-snapshot-call"
                 >
                   <CalendarCheck className="mr-2 h-5 w-5" />
-                  Get My Kubernetes Snapshot
+                  Book Your 15-Min Snapshot Call
                 </Button>
                 <p className="text-sm text-muted-foreground mt-2">
-                  15-min call to see if you qualify
+                  We'll discuss your setup and confirm if Snapshot is a good fit. No pressure, no pitch.
                 </p>
               </div>
               <div className="text-center">
@@ -409,8 +412,18 @@ export default function LandingPage() {
         </div>
       </section>
       
-      {/* Risk Reversal Section */}
+      {/* Social Proof Section */}
       <section className="py-16 lg:py-20 bg-muted">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
+          <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-6 inline-block">
+            <p className="text-lg text-foreground font-semibold">
+              <Star className="inline text-primary h-5 w-5 mr-2" />
+              Limited beta program - first 5 customers receive priority scheduling in exchange for detailed feedback
+            </p>
+          </div>
+        </div>
+        
+        {/* Risk Reversal Section */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="bg-card p-8 lg:p-12 rounded-2xl border-2 border-primary">
             <div className="text-center">
@@ -421,7 +434,7 @@ export default function LandingPage() {
                 Risk-Free Guarantee
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                If we don't uncover <strong className="text-foreground">$10k+</strong> in annualized savings or at least <strong className="text-foreground">one critical security gap*</strong>, we refund <strong className="text-foreground">100% of your fee</strong>. No risk, no hidden catches.
+                If we don't uncover at least <strong className="text-foreground">3x your fee in annual savings</strong> OR at least <strong className="text-foreground">one critical security gap*</strong>, we refund <strong className="text-foreground">100% of your fee</strong>. No risk, no hidden catches.
               </p>
               <p className="text-sm text-muted-foreground">
                 *Excludes non-actionable findings on managed services (e.g., GKE, EKS).
@@ -464,7 +477,7 @@ export default function LandingPage() {
           </Button>
           
           <p className="text-sm text-muted-foreground">
-            Early Adopter slots (CA $2,950) still available - see below.
+            Early Adopter slots (CA $3,950) still available - see below.
           </p>
         </div>
       </section>
@@ -480,7 +493,7 @@ export default function LandingPage() {
               Early Adopter Special
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              For a limited time, we're offering the first <strong className="text-foreground">3 customers</strong> a reduced fee of <strong className="text-foreground">CA $2,950 (US $2,250)</strong> in exchange for feedback and a testimonial.
+              For a limited time, we're offering the first <strong className="text-foreground">5 customers</strong> a reduced fee of <strong className="text-foreground">CA $3,950 (US $3,000)</strong> in exchange for feedback and a testimonial.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               Standard price is CA $4,950 (US $3,750) - lock in this early adopter rate and be among the first to uncover $10k+ in Kubernetes savings and critical security fixes.
@@ -490,7 +503,7 @@ export default function LandingPage() {
               className="bg-primary text-primary-foreground px-10 py-4 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors"
               data-testid="button-early-adopter-reserve"
             >
-              Reserve at CA $2,950
+              Reserve at CA $3,950
             </Button>
           </Card>
         </div>
@@ -537,7 +550,7 @@ export default function LandingPage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold text-foreground mb-2">What if you don't find anything?</h3>
-                  <p className="text-muted-foreground">Our guarantee covers you: we refund 100% of your fee if we don't uncover at least CA $10,000 in savings or one critical security gap.</p>
+                  <p className="text-muted-foreground">Our guarantee covers you: we refund 100% of your fee if we don't uncover at least 3x your fee in annual savings or one critical security gap.</p>
                 </div>
               </div>
             </Card>
@@ -569,12 +582,16 @@ export default function LandingPage() {
           
           <Button 
             onClick={() => handleCTAClick('bookFinalCall')}
-            className="bg-primary text-primary-foreground px-12 py-5 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors mb-6"
+            className="bg-primary text-primary-foreground px-12 py-5 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors mb-2"
             data-testid="button-final-book-call"
           >
             <CalendarCheck className="mr-3 h-6 w-6" />
             Book Your 15-min Snapshot Call
           </Button>
+          
+          <p className="text-sm text-muted-foreground mb-4">
+            We'll discuss your setup and confirm if Snapshot is a good fit. No pressure, no pitch.
+          </p>
           
           <p className="text-sm text-muted-foreground">
             Limited slots available each month.
