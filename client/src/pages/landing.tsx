@@ -25,7 +25,6 @@ import logoHorizontal from "@assets/cloudnative_logo_1_1757348518870.png";
 export default function LandingPage() {
   const handleCTAClick = (action: string) => {
     console.log('CTA clicked:', action);
-    // TODO: Implement actual booking/lead generation logic
     switch(action) {
       case 'bookCall':
       case 'bookSnapshotCall':
@@ -33,14 +32,17 @@ export default function LandingPage() {
       case 'reserveSnapshotSlot':
       case 'reserveEarlyAdopterSlot':
       case 'bookFinalCall':
-        alert('Booking functionality would redirect to calendar booking system');
+        window.open('https://calendly.com/rubenpanussyants/30min', '_blank');
         break;
       case 'seeSampleReport':
       case 'viewSampleReport':
         alert('Sample report would open in new window/modal');
         break;
+      case 'showHowSnapshot':
+        document.getElementById('solution-section')?.scrollIntoView({ behavior: 'smooth' });
+        break;
       default:
-        alert('Action: ' + action);
+        console.log('Action:', action);
     }
   };
 
@@ -184,7 +186,7 @@ export default function LandingPage() {
         </div>
       </section>
       {/* Solution Section */}
-      <section className="py-16 lg:py-20 bg-muted">
+      <section id="solution-section" className="py-16 lg:py-20 bg-muted">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
