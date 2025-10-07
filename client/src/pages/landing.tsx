@@ -74,7 +74,7 @@ export default function LandingPage() {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">Cut $10k+ from Your Kubernetes Bill in 1 Week - or Your Money Back</h1>
             <p className="text-xl lg:text-2xl text-muted-foreground mb-4 leading-relaxed">Your cloud costs keep climbing. Security audits feel risky. Engineers are firefighting instead of building. Snapshot fixes that in just 1 week.</p>
-            <p className="text-lg text-muted-foreground mb-8 font-medium">For Series A/B startups and SMBs running 10-100 Kubernetes nodes on AWS, GCP, or Azure</p>
+            <p className="text-lg text-muted-foreground mb-8 font-medium">For Series A/B startups and SMBs running Kubernetes on AWS, GCP, or Azure</p>
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
