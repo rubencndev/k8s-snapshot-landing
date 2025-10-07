@@ -77,8 +77,8 @@ export default function LandingPage() {
             <p className="text-lg text-muted-foreground mb-8 font-medium">For Series A/B startups and SMBs running 10-100 Kubernetes nodes on AWS, GCP, or Azure</p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <div className="text-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-end mb-12">
+              <div className="text-center sm:max-w-xs">
                 <Button 
                   onClick={() => handleCTAClick('bookSnapshotCall')}
                   className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors w-full sm:w-auto"
@@ -91,7 +91,7 @@ export default function LandingPage() {
                   We'll discuss your setup and confirm if Snapshot is a good fit. No pressure, no pitch.
                 </p>
               </div>
-              <div className="text-center">
+              <div className="text-center sm:mb-14">
                 <Button 
                   onClick={() => handleCTAClick('seeSampleReport')}
                   variant="outline"
@@ -101,9 +101,6 @@ export default function LandingPage() {
                   <FileText className="mr-2 h-5 w-5" />
                   See Sample Report
                 </Button>
-                <p className="text-sm text-transparent mt-2">
-                  Placeholder for alignment
-                </p>
               </div>
             </div>
 
