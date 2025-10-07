@@ -91,7 +91,7 @@ export default function LandingPage() {
                   We'll discuss your setup and confirm if Snapshot is a good fit. No pressure, no pitch.
                 </p>
               </div>
-              <div className="text-center">
+              <div className="text-center sm:-ml-6">
                 <Button 
                   onClick={() => handleCTAClick('seeSampleReport')}
                   variant="outline"
