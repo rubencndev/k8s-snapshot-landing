@@ -79,7 +79,7 @@ export default function LandingPage() {
             <p className="text-lg text-muted-foreground mb-8 font-medium">For Series A/B startups and SMBs running Kubernetes on AWS, GCP, or Azure</p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
               <div className="text-center">
                 <Button 
                   onClick={() => handleCTAClick('bookSnapshotCall')}
@@ -93,7 +93,7 @@ export default function LandingPage() {
                   Limited: <span className="text-primary">3 of 5 slots remaining</span>
                 </p>
               </div>
-              <div className="text-center sm:-ml-6">
+              <div className="text-center">
                 <Button 
                   onClick={() => handleCTAClick('seeSampleReport')}
                   variant="outline"
