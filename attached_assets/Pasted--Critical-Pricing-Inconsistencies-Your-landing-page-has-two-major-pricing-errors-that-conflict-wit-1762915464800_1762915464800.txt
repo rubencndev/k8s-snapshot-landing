@@ -1,0 +1,106 @@
+🔴 Critical Pricing Inconsistencies
+Your landing page has two major pricing errors that conflict with what we finalized:
+Issue 1: Standard Pricing is Wrong
+Current: Shows CA $4,950 as standard price
+Should be: CA $6,950 (per our discussion)
+Issue 2: Early Adopter Pricing is Wrong
+Current: Shows CA $3,950 early adopter
+Should be: CA $3,000 (per our Tier 2 discussion)
+This creates confusion and undervalues your service.
+
+📝 Required Changes - Priority Order
+Change 1: Page 8 - Pricing Section (CRITICAL)
+Current text:
+CA $4,950
+US $3,750
+
+The K8s Snapshot is backed by a tailored guarantee and a fixed-
+fee with no hidden costs.
+
+Reserve Your Snapshot Slot Today
+
+Early Adopter slots (CA $3,950) still available - see below.
+Replace with:
+CA $6,950
+US $5,150
+
+The K8s Snapshot is backed by a tailored guarantee and a fixed-
+fee with no hidden costs.
+
+Reserve Your Snapshot Slot Today
+
+Early Adopter slots (CA $3,000) still available - limited to first 5 customers.
+
+Change 2: Page 8 - Early Adopter Section (CRITICAL)
+Current text:
+Early Adopter Special
+
+For a limited time, we're offering the first 5 customers a reduced fee of
+CA $3,950 (US $3,000) in exchange for feedback and a testimonial.
+
+Standard price is CA $4,950 (US $3,750) - lock in this early adopter rate
+and be among the first to uncover $10k+ in Kubernetes savings and
+critical security fixes.
+
+Reserve at CA $3,950
+Replace with:
+🎯 Early Adopter Program - Limited to First 5 Customers
+
+Launch special: CA $3,000 (US $2,200) for the first 5 customers who 
+provide detailed feedback and a testimonial.
+
+Regular price: CA $6,950 (US $5,150)
+
+What you get at early adopter pricing:
+✓ Full comprehensive assessment (normally $6,950)
+✓ Priority scheduling (start within 7 days)
+✓ Extended 60-minute readout (vs. standard 45 min)
+✓ 30 days of follow-up Q&A via email
+
+Reserve Your Early Adopter Slot → CA $3,000
+Why this is better:
+
+Shows the contrast: $3,000 vs. $6,950 (57% discount)
+Creates urgency: "Limited to first 5"
+Adds extra value for early adopters
+Makes $3,000 look like a steal
+
+
+Change 3: Page 1 - Hero Section CTA
+Current: "Book Your 15-Min Snapshot Call" (greyed out button)
+Recommendation: Make this button active and prominent, OR replace with:
+[Primary CTA Button - Blue]
+Reserve Early Adopter Slot (CA $3,000)
+Limited: 3 of 5 slots remaining
+
+[Secondary CTA Button - White]
+See Sample Report
+Why: Creates urgency and shows social proof (scarcity)
+
+Change 4: Page 7 - Beta Program Section
+Current text:
+Limited beta program - first 5 customers receive priority scheduling in
+exchange for detailed feedback
+This is vague. Replace with:
+🎯 Early Adopter Program
+
+The first 5 customers receive:
+- 57% discount (CA $3,000 vs. regular CA $6,950)
+- Priority scheduling (start within 7 days)
+- Extended readout session (60 min vs. 45 min)
+- 30 days of follow-up Q&A support
+
+In exchange for:
+- Detailed feedback on the process
+- Brief testimonial upon completion
+- Permission to use results in anonymized case study
+
+Slots remaining: 3 of 5
+
+Change 5: Page 10 - Footer CTA
+Current: "Book Your 15-min Snapshot Call"
+Add urgency:
+Book Your 15-min Snapshot Call
+
+Early Adopter slots filling fast: 3 of 5 remaining at CA $3,000
+(Regular price CA $6,950 starting in January 2026)
