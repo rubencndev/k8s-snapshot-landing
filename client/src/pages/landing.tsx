@@ -22,7 +22,7 @@ import {
   ListTodo
 } from "lucide-react";
 import logoHorizontal from "@assets/cloudnative_logo_1_1757348518870.png";
-import sampleReportPdf from "@assets/badapp-report_1762916612789.pdf";
+import sampleReportPdf from "@assets/badapp-report_1762983568895.pdf";
 
 export default function LandingPage() {
   const handleCTAClick = (action: string) => {
@@ -322,7 +322,7 @@ export default function LandingPage() {
                     </div>
                     <div className="bg-white p-3 rounded-lg shadow-sm border border-slate-200">
                       <p className="text-xs text-slate-500 mb-1">Savings Potential</p>
-                      <p className="text-xl font-bold text-green-600">$28.8K</p>
+                      <p className="text-xl font-bold text-green-600">$29K</p>
                       <p className="text-xs text-slate-400">/year unlocked</p>
                     </div>
                   </div>
