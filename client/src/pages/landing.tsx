@@ -85,10 +85,10 @@ export default function LandingPage() {
                   data-testid="button-hero-book-snapshot-call"
                 >
                   <CalendarCheck className="mr-2 h-5 w-5" />
-                  Book Your 15-Min Snapshot Call
+                  Reserve Early Adopter Slot (CA $3,000)
                 </Button>
-                <p className="text-sm text-muted-foreground mt-2">
-                  We'll discuss your setup and confirm if Snapshot is a good fit. No pressure, no pitch.
+                <p className="text-sm text-muted-foreground mt-2 font-semibold">
+                  Limited: <span className="text-primary">3 of 5 slots remaining</span>
                 </p>
               </div>
               <div className="text-center sm:-ml-6">
