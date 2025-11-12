@@ -22,7 +22,7 @@ import {
   ListTodo
 } from "lucide-react";
 import logoHorizontal from "@assets/cloudnative_logo_1_1757348518870.png";
-import sampleReportPdf from "@assets/badapp-report_1762916612789.pdf";
+import sampleReportPdf from "@assets/badapp-report_1762983568895.pdf";
 
 export default function LandingPage() {
   const handleCTAClick = (action: string) => {
