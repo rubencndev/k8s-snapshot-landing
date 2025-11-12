@@ -22,7 +22,6 @@ import {
   ListTodo
 } from "lucide-react";
 import logoHorizontal from "@assets/cloudnative_logo_1_1757348518870.png";
-import sampleReportPdf from "@assets/badapp-report_1762983568895.pdf";
 
 export default function LandingPage() {
   const handleCTAClick = (action: string) => {
@@ -38,7 +37,7 @@ export default function LandingPage() {
         break;
       case 'seeSampleReport':
       case 'viewSampleReport':
-        window.open(sampleReportPdf, '_blank');
+        window.open('/badapp-report.pdf', '_blank');
         break;
       case 'showHowSnapshot':
         document.getElementById('solution-section')?.scrollIntoView({ behavior: 'smooth' });
