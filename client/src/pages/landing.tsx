@@ -407,13 +407,65 @@ export default function LandingPage() {
       </section>
       {/* Social Proof Section */}
       <section className="py-16 lg:py-20 bg-muted">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
-          <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-6 inline-block">
-            <p className="text-lg text-foreground font-semibold">
-              <Star className="inline text-primary h-5 w-5 mr-2" />
-              Limited beta program - first 5 customers receive priority scheduling in exchange for detailed feedback
-            </p>
-          </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+          <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-primary p-8 lg:p-10 rounded-2xl">
+            <div className="text-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <Star className="text-primary-foreground h-8 w-8" />
+              </div>
+              <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">
+                🎯 Early Adopter Program
+              </h3>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-6">
+              <div>
+                <h4 className="text-lg font-semibold text-foreground mb-4">The first 5 customers receive:</h4>
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <CheckCircle className="text-accent h-5 w-5 mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground">57% discount (CA $3,000 vs. regular CA $6,950)</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-accent h-5 w-5 mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground">Priority scheduling (start within 7 days)</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-accent h-5 w-5 mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground">Extended readout session (60 min vs. 45 min)</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-accent h-5 w-5 mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground">30 days of follow-up Q&A support</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h4 className="text-lg font-semibold text-foreground mb-4">In exchange for:</h4>
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <CheckCircle className="text-primary h-5 w-5 mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground">Detailed feedback on the process</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-primary h-5 w-5 mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground">Brief testimonial upon completion</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-primary h-5 w-5 mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground">Permission to use results in anonymized case study</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <p className="text-xl font-bold text-primary">
+                Slots remaining: <span className="text-2xl">3 of 5</span>
+              </p>
+            </div>
+          </Card>
         </div>
         
         {/* Risk Reversal Section */}
