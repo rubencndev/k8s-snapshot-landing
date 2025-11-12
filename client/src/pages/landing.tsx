@@ -18,7 +18,8 @@ import {
   Award, 
   Clock,
   HelpCircle,
-  CalendarCheck
+  CalendarCheck,
+  ListTodo
 } from "lucide-react";
 import logoHorizontal from "@assets/cloudnative_logo_1_1757348518870.png";
 
@@ -283,6 +284,16 @@ export default function LandingPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Remediation steps</h3>
                   <p className="text-muted-foreground">Owner, impact, and copy-paste fixes for each key finding.</p>
+                </div>
+              </Card>
+              
+              <Card className="flex items-start space-x-4 p-6 bg-card rounded-xl border border-border">
+                <div className="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <ListTodo className="text-orange-600 h-6 w-6" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Ready-to-import JIRA tickets</h3>
+                  <p className="text-muted-foreground">Pre-formatted tickets that can be moved to your next sprint and actioned on immediately.</p>
                 </div>
               </Card>
             </div>
