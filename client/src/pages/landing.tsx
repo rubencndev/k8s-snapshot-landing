@@ -449,10 +449,10 @@ export default function LandingPage() {
           <Card className="bg-card p-8 lg:p-12 rounded-2xl border border-border max-w-lg mx-auto mb-8">
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bold text-primary mb-2">
-                CA $4,950
+                CA $6,950
               </div>
               <div className="text-lg text-muted-foreground mb-6">
-                (US $3,750)
+                (US $5,150)
               </div>
               <div className="text-sm text-muted-foreground mb-8">
                 The K8s Snapshot is backed by a tailored guarantee and a fixed-fee with no hidden costs.
@@ -469,7 +469,7 @@ export default function LandingPage() {
           </Button>
           
           <p className="text-sm text-muted-foreground">
-            Early Adopter slots (CA $3,950) still available - see below.
+            Early Adopter slots (CA $3,000) still available - limited to first 5 customers.
           </p>
         </div>
       </section>
