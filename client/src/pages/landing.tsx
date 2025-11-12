@@ -22,6 +22,7 @@ import {
   ListTodo
 } from "lucide-react";
 import logoHorizontal from "@assets/cloudnative_logo_1_1757348518870.png";
+import sampleReportPdf from "@assets/badapp-report_1762916612789.pdf";
 
 export default function LandingPage() {
   const handleCTAClick = (action: string) => {
@@ -37,7 +38,7 @@ export default function LandingPage() {
         break;
       case 'seeSampleReport':
       case 'viewSampleReport':
-        alert('Sample report would open in new window/modal');
+        window.open(sampleReportPdf, '_blank');
         break;
       case 'showHowSnapshot':
         document.getElementById('solution-section')?.scrollIntoView({ behavior: 'smooth' });
@@ -299,21 +300,48 @@ export default function LandingPage() {
             </div>
             
             <div className="flex items-center justify-center">
-              <Card className="bg-card p-8 rounded-xl border border-border text-center">
-                <div className="w-full h-80 bg-muted rounded-lg flex items-center justify-center mb-4">
-                  <div className="text-center">
-                    <FileText className="text-muted-foreground h-16 w-16 mx-auto mb-2" />
-                    <p className="text-muted-foreground font-medium">Sample Report Preview</p>
-                    <p className="text-sm text-muted-foreground">Executive Summary & Action Plan</p>
+              <Card className="bg-card p-6 rounded-xl border border-border">
+                <h3 className="text-lg font-semibold text-foreground mb-4 text-center">Executive Dashboard Preview</h3>
+                <div className="bg-gradient-to-br from-slate-50 to-slate-100 p-6 rounded-lg border border-slate-200 mb-4">
+                  <p className="text-xs text-slate-600 mb-4 text-center font-semibold">Your cluster at a glance</p>
+                  
+                  <div className="grid grid-cols-2 gap-4 mb-4">
+                    <div className="bg-white p-3 rounded-lg shadow-sm border border-slate-200">
+                      <p className="text-xs text-slate-500 mb-1">Cluster Health Score</p>
+                      <p className="text-2xl font-bold text-orange-600">57%</p>
+                      <p className="text-xs text-slate-400">Target: 80%+</p>
+                    </div>
+                    <div className="bg-white p-3 rounded-lg shadow-sm border border-slate-200">
+                      <p className="text-xs text-slate-500 mb-1">Savings Potential</p>
+                      <p className="text-xl font-bold text-green-600">$28.8K</p>
+                      <p className="text-xs text-slate-400">/year unlocked</p>
+                    </div>
                   </div>
+                  
+                  <div className="grid grid-cols-3 gap-2">
+                    <div className="bg-white p-2 rounded shadow-sm border border-slate-200 text-center">
+                      <p className="text-lg font-bold text-red-600">6</p>
+                      <p className="text-xs text-slate-500">Critical Issues</p>
+                    </div>
+                    <div className="bg-white p-2 rounded shadow-sm border border-slate-200 text-center">
+                      <p className="text-lg font-bold text-orange-600">F</p>
+                      <p className="text-xs text-slate-500">RBAC Score</p>
+                    </div>
+                    <div className="bg-white p-2 rounded shadow-sm border border-slate-200 text-center">
+                      <p className="text-lg font-bold text-red-600">0%</p>
+                      <p className="text-xs text-slate-500">Network Policy</p>
+                    </div>
+                  </div>
+                  
+                  <p className="text-xs text-slate-600 mt-4 text-center italic">Full 15-page report with action plan</p>
                 </div>
                 <Button 
-                  variant="link"
                   onClick={() => handleCTAClick('viewSampleReport')}
-                  className="text-primary hover:underline font-medium"
+                  className="w-full bg-primary text-primary-foreground hover:bg-[#1b88cf] transition-colors"
                   data-testid="button-deliverables-view-sample-report"
                 >
-                  View Full Sample Report →
+                  <FileText className="mr-2 h-4 w-4" />
+                  Download Full Sample Report (PDF)
                 </Button>
               </Card>
             </div>
