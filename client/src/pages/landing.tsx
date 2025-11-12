@@ -648,20 +648,21 @@ export default function LandingPage() {
           
           <Button 
             onClick={() => handleCTAClick('bookFinalCall')}
-            className="bg-primary text-primary-foreground px-12 py-5 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors mb-2"
+            className="bg-primary text-primary-foreground px-12 py-5 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors mb-4"
             data-testid="button-final-book-call"
           >
             <CalendarCheck className="mr-3 h-6 w-6" />
             Book Your 15-min Snapshot Call
           </Button>
           
-          <p className="text-sm text-muted-foreground mb-4">
-            We'll discuss your setup and confirm if Snapshot is a good fit. No pressure, no pitch.
-          </p>
-          
-          <p className="text-sm text-muted-foreground">
-            Limited slots available each month.
-          </p>
+          <div className="bg-yellow-50 border-2 border-yellow-300 rounded-xl p-4 inline-block">
+            <p className="text-base text-foreground font-semibold mb-1">
+              Early Adopter slots filling fast: <span className="text-primary">3 of 5 remaining at CA $3,000</span>
+            </p>
+            <p className="text-sm text-muted-foreground">
+              (Regular price CA $6,950 starting in January 2026)
+            </p>
+          </div>
         </div>
       </section>
       {/* Footer */}
