@@ -476,26 +476,51 @@ export default function LandingPage() {
       {/* Early Adopter Section */}
       <section className="pt-4 pb-16 lg:pt-6 lg:pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="bg-gradient-to-r from-yellow-50 to-orange-50 p-8 lg:p-12 rounded-2xl border-2 border-yellow-300 text-center">
+          <Card className="bg-gradient-to-r from-yellow-50 to-orange-50 p-8 lg:p-12 rounded-2xl border-2 border-yellow-300">
             <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
               <Star className="text-yellow-800 h-8 w-8" />
             </div>
-            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">
-              Early Adopter Special
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 text-center">
+              🎯 Early Adopter Program - Limited to First 5 Customers
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              For a limited time, we're offering the first <strong className="text-foreground">5 customers</strong> a reduced fee of <strong className="text-foreground">CA $3,950 (US $3,000)</strong> in exchange for feedback and a testimonial.
+            <p className="text-lg text-muted-foreground leading-relaxed mb-4 text-center">
+              Launch special: <strong className="text-foreground">CA $3,000 (US $2,200)</strong> for the first 5 customers who provide detailed feedback and a testimonial.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Standard price is CA $4,950 (US $3,750) - lock in this early adopter rate and be among the first to uncover $10k+ in Kubernetes savings and critical security fixes.
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6 text-center">
+              Regular price: <strong className="text-foreground">CA $6,950 (US $5,150)</strong>
             </p>
-            <Button 
-              onClick={() => handleCTAClick('reserveEarlyAdopterSlot')}
-              className="bg-primary text-primary-foreground px-10 py-4 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors"
-              data-testid="button-early-adopter-reserve"
-            >
-              Reserve at CA $3,950
-            </Button>
+            
+            <div className="bg-white/50 rounded-xl p-6 mb-8">
+              <h3 className="text-lg font-semibold text-foreground mb-4">What you get at early adopter pricing:</h3>
+              <div className="space-y-3">
+                <div className="flex items-start">
+                  <CheckCircle className="text-accent h-5 w-5 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">Full comprehensive assessment (normally $6,950)</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="text-accent h-5 w-5 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">Priority scheduling (start within 7 days)</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="text-accent h-5 w-5 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">Extended 60-minute readout (vs. standard 45 min)</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="text-accent h-5 w-5 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">30 days of follow-up Q&A via email</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <Button 
+                onClick={() => handleCTAClick('reserveEarlyAdopterSlot')}
+                className="bg-primary text-primary-foreground px-10 py-4 rounded-full text-xl font-semibold hover:bg-[#1b88cf] hover:border-[#1b88cf] transition-colors"
+                data-testid="button-early-adopter-reserve"
+              >
+                Reserve Your Early Adopter Slot → CA $3,000
+              </Button>
+            </div>
           </Card>
         </div>
       </section>
