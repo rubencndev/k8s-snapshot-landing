@@ -79,7 +79,7 @@ export default function LandingPage() {
             <p className="text-lg text-muted-foreground mb-8 font-medium">For Series A/B startups and SMBs running Kubernetes on AWS, GCP, or Azure</p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-6">
               <div className="text-center">
                 <Button 
                   onClick={() => handleCTAClick('bookSnapshotCall')}
@@ -106,6 +106,15 @@ export default function LandingPage() {
                 <p className="text-sm text-transparent mt-2">
                   Placeholder for alignment
                 </p>
+              </div>
+            </div>
+            
+            {/* Trust Badge - Zero Access */}
+            <div className="flex items-center justify-center gap-2 mb-12 bg-green-50 border border-green-200 rounded-full px-6 py-3 max-w-md mx-auto">
+              <Lock className="text-green-700 h-5 w-5" />
+              <div className="text-left">
+                <p className="text-sm font-semibold text-green-900">Zero Access Required</p>
+                <p className="text-xs text-green-700">Your team runs our script – we never touch your cluster</p>
               </div>
             </div>
 
@@ -656,7 +665,8 @@ export default function LandingPage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold text-foreground mb-2">What if you don't find anything?</h3>
-                  <p className="text-muted-foreground">Our guarantee covers you: we refund 100% of your fee if we don't uncover at least 3x your fee in annual savings or one critical security gap.</p>
+                  <p className="text-muted-foreground mb-3">If we don't uncover at least <strong className="text-foreground">$9,000 in annual savings</strong> (3x your early adopter fee) <strong className="text-foreground">OR one critical security gap*</strong>, we refund 100%.</p>
+                  <p className="text-sm text-muted-foreground italic">*Standard pricing customers: guaranteed $20,850 in savings (3x $6,950) or refund</p>
                 </div>
               </div>
             </Card>
