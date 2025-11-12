@@ -37,7 +37,7 @@ export default function LandingPage() {
         break;
       case 'seeSampleReport':
       case 'viewSampleReport':
-        window.open('/badapp-report.pdf', '_blank');
+        window.open('/assets/badapp-report_1762916612789-DReHqKdA.pdf', '_blank');
         break;
       case 'showHowSnapshot':
         document.getElementById('solution-section')?.scrollIntoView({ behavior: 'smooth' });
