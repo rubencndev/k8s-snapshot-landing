@@ -432,7 +432,9 @@ export default function LandingPage() {
                     <span>Resource usage data (if available)</span>
                   </li>
                 </ul>
-                <p className="text-muted-foreground italic">All data is captured using kubectl only, with your own credentials.</p>
+                <p className="text-muted-foreground italic">All data is captured using kubectl only, with your own credentials.
+                No application logs, secrets, or live traffic data is ever collected.
+</p>
                 <p className="text-muted-foreground italic">No in-cluster agents or persistent workloads are required.</p>
               </div>
             </Card>
