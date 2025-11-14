@@ -385,7 +385,7 @@ export default function LandingPage() {
               </div>
               <div className="space-y-4">
                 <p className="text-muted-foreground">We provide a short, guided Helm install.</p>
-                <p className="text-muted-foreground">Kubecost begins producing meaningful cost & efficiency data within 15–30 minutes.</p>
+                <p className="text-muted-foreground">Kubecost begins producing meaningful cost and resource insights within 15–30 minutes.</p>
                 <p className="text-muted-foreground">Your team exports the cost model as JSON using our instructions.</p>
                 <p className="text-muted-foreground"><strong className="text-foreground">We never access Kubecost directly.</strong></p>
               </div>
