@@ -405,7 +405,7 @@ export default function LandingPage() {
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>RBAC data</span>
+                    <span>Cluster resources (Namespaces, PVCs/PVs, Services, Load Balancers)</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
@@ -413,7 +413,7 @@ export default function LandingPage() {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Cluster resources (Namespaces, PVCs/PVs, Services, Load Balancers)</span>
+                    <span>RBAC data</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
