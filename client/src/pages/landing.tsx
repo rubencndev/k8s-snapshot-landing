@@ -452,7 +452,7 @@ export default function LandingPage() {
               <div className="flex items-start">
                 <FileText className="text-green-600 h-6 w-6 mr-3 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-foreground">The folder of JSON files produced by the Snapshot script</p>
+                  <p className="font-semibold text-foreground">Snapshot JSON bundle (generated automatically by the script)</p>
                 </div>
               </div>
             </div>
