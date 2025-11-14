@@ -397,7 +397,7 @@ export default function LandingPage() {
                 <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
                   <span className="text-2xl font-bold text-blue-600">2</span>
                 </div>
-                <h3 className="text-2xl font-semibold text-foreground">Run the Snapshot Script (5–10 minutes)</h3>
+                <h3 className="text-2xl font-semibold text-foreground">Run the Snapshot Script (5–10 minutes total)</h3>
               </div>
               <div className="space-y-4">
                 <p className="text-muted-foreground">We provide a single script your team runs locally, using your existing kubeconfig.</p>
