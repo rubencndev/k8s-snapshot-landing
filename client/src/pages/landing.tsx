@@ -356,6 +356,166 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+      {/* Zero Access Required Section */}
+      <section className="py-16 lg:py-20 bg-gradient-to-b from-green-50 to-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="flex items-center justify-center mb-4">
+              <Lock className="text-green-600 h-12 w-12" />
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              Zero Access Required
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              You keep full control. We never ask for kubeconfig or direct cluster access.
+            </p>
+            <p className="text-lg text-muted-foreground mt-2 max-w-3xl mx-auto">
+              Your team runs all commands, using your own credentials, inside your own environment.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 mb-12">
+            {/* Deploy Kubecost */}
+            <Card className="bg-card p-8 rounded-xl border border-border">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-2xl font-bold text-blue-600">1</span>
+                </div>
+                <h3 className="text-2xl font-semibold text-foreground">Deploy Kubecost (5 minutes)</h3>
+              </div>
+              <div className="space-y-4">
+                <p className="text-muted-foreground">We provide a short, guided Helm install.</p>
+                <p className="text-muted-foreground">Kubecost begins producing meaningful cost & efficiency data within 15–30 minutes.</p>
+                <p className="text-muted-foreground">Your team simply exports the cost model as JSON using our instructions. <strong className="text-foreground">We never access Kubecost directly.</strong></p>
+              </div>
+            </Card>
+
+            {/* Run the Snapshot Script */}
+            <Card className="bg-card p-8 rounded-xl border border-border">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-2xl font-bold text-blue-600">2</span>
+                </div>
+                <h3 className="text-2xl font-semibold text-foreground">Run the Snapshot Script (5–10 minutes)</h3>
+              </div>
+              <div className="space-y-4">
+                <p className="text-muted-foreground">We provide a single script that your team runs locally, using your own kubeconfig.</p>
+                <p className="text-muted-foreground font-semibold text-foreground">This script securely gathers:</p>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start">
+                    <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>RBAC data</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Workload and pod specs</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Network policy configs</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Namespace data, PVCs, PVs, and load balancers</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>HPA, PDB, and reliability-related configs</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>kube-bench JSON (CIS results)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Any optional usage data available via Metrics Server</span>
+                  </li>
+                </ul>
+                <p className="text-muted-foreground italic">All data is captured using kubectl commands only, with your own credentials. There is no need to run any in-cluster agents or persistent workloads.</p>
+              </div>
+            </Card>
+          </div>
+
+          {/* What You Send Us */}
+          <Card className="bg-white p-8 rounded-xl border-2 border-green-200 mb-12">
+            <h3 className="text-2xl font-semibold text-foreground mb-4">What You Send Us</h3>
+            <p className="text-muted-foreground mb-4">You send only two files:</p>
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="flex items-start">
+                <FileText className="text-green-600 h-6 w-6 mr-3 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold text-foreground">Kubecost JSON export</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <FileText className="text-green-600 h-6 w-6 mr-3 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold text-foreground">The folder of JSON files generated by the Snapshot script</p>
+                </div>
+              </div>
+            </div>
+            <p className="text-muted-foreground">We analyze everything offline, generate the report + JIRA tickets, and permanently delete the raw files after delivery.</p>
+          </Card>
+
+          {/* Security-Friendly by Design */}
+          <div className="bg-gradient-to-r from-green-600 to-green-700 p-8 lg:p-12 rounded-2xl text-white">
+            <h3 className="text-2xl lg:text-3xl font-bold mb-6 text-center">Security-Friendly by Design</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Shield className="h-6 w-6" />
+                </div>
+                <p className="font-semibold mb-1">No kubeconfig shared</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Shield className="h-6 w-6" />
+                </div>
+                <p className="font-semibold mb-1">No impersonation</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Shield className="h-6 w-6" />
+                </div>
+                <p className="font-semibold mb-1">No in-cluster collector pods</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Shield className="h-6 w-6" />
+                </div>
+                <p className="font-semibold mb-1">No privileged workloads</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Shield className="h-6 w-6" />
+                </div>
+                <p className="font-semibold mb-1">Zero third-party access</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Shield className="h-6 w-6" />
+                </div>
+                <p className="font-semibold mb-1">Everything runs with your existing permissions</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Shield className="h-6 w-6" />
+                </div>
+                <p className="font-semibold mb-1">Only JSON configuration files are shared</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Lock className="h-6 w-6" />
+                </div>
+                <p className="font-semibold mb-1">Your cluster stays private</p>
+              </div>
+            </div>
+            <div className="mt-8 text-center">
+              <p className="text-xl font-semibold">Your cluster stays private. Your access stays private. Your security team stays happy.</p>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* How It Works Section */}
       <section className="py-16 lg:py-20 bg-muted">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
