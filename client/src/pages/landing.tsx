@@ -507,7 +507,8 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="mt-8 text-center">
-              <p className="text-xl font-semibold">Your cluster stays private. Your credentials stay private. Your security team stays happy.</p>
+              <p className="text-xl font-semibold">Your cluster stays private. Your credentials stay private.
+              Your security team stays happy.</p>
             </div>
           </div>
         </div>
