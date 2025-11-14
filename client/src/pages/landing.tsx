@@ -429,7 +429,7 @@ export default function LandingPage() {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Any available usage data</span>
+                    <span>Resource usage signals (if available)</span>
                   </li>
                 </ul>
                 <p className="text-muted-foreground italic">All data is captured using kubectl only, with your own credentials.</p>
