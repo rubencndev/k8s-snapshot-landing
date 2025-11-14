@@ -370,7 +370,7 @@ export default function LandingPage() {
               You keep full control. We never ask for kubeconfig or direct cluster access.
             </p>
             <p className="text-lg text-muted-foreground mt-2 max-w-3xl mx-auto">
-              Your team runs all commands, using your own credentials, inside your own environment.
+              Your team runs all commands using your own credentials, inside your own environment.
             </p>
           </div>
 
@@ -386,7 +386,8 @@ export default function LandingPage() {
               <div className="space-y-4">
                 <p className="text-muted-foreground">We provide a short, guided Helm install.</p>
                 <p className="text-muted-foreground">Kubecost begins producing meaningful cost & efficiency data within 15–30 minutes.</p>
-                <p className="text-muted-foreground">Your team simply exports the cost model as JSON using our instructions. <strong className="text-foreground">We never access Kubecost directly.</strong></p>
+                <p className="text-muted-foreground">Your team exports the cost model as JSON using our instructions.</p>
+                <p className="text-muted-foreground"><strong className="text-foreground">We never access Kubecost directly.</strong></p>
               </div>
             </Card>
 
@@ -399,7 +400,7 @@ export default function LandingPage() {
                 <h3 className="text-2xl font-semibold text-foreground">Run the Snapshot Script (5–10 minutes)</h3>
               </div>
               <div className="space-y-4">
-                <p className="text-muted-foreground">We provide a single script that your team runs locally, using your own kubeconfig.</p>
+                <p className="text-muted-foreground">We provide a single script your team runs locally, using your existing kubeconfig.</p>
                 <p className="text-muted-foreground font-semibold text-foreground">This script securely gathers:</p>
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-start">
@@ -408,7 +409,11 @@ export default function LandingPage() {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Workload and pod specs</span>
+                    <span>Workload configs (Deployments, Pods, StatefulSets, DaemonSets, Jobs)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Cluster resources (Namespaces, PVCs/PVs, Services, LoadBalancers)</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
@@ -416,11 +421,7 @@ export default function LandingPage() {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Namespace data, PVCs, PVs, and load balancers</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>HPA, PDB, and reliability-related configs</span>
+                    <span>HPA, PDB, and other reliability-related configs</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
@@ -428,10 +429,11 @@ export default function LandingPage() {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Any optional usage data available via Metrics Server</span>
+                    <span>Any available usage data</span>
                   </li>
                 </ul>
-                <p className="text-muted-foreground italic">All data is captured using kubectl commands only, with your own credentials. There is no need to run any in-cluster agents or persistent workloads.</p>
+                <p className="text-muted-foreground italic">All data is captured using kubectl only, with your own credentials.</p>
+                <p className="text-muted-foreground italic">No in-cluster agents or persistent workloads are required.</p>
               </div>
             </Card>
           </div>
@@ -439,7 +441,7 @@ export default function LandingPage() {
           {/* What You Send Us */}
           <Card className="bg-white p-8 rounded-xl border-2 border-green-200 mb-12">
             <h3 className="text-2xl font-semibold text-foreground mb-4">What You Send Us</h3>
-            <p className="text-muted-foreground mb-4">You send only two files:</p>
+            <p className="text-muted-foreground mb-4">You send two files:</p>
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div className="flex items-start">
                 <FileText className="text-green-600 h-6 w-6 mr-3 mt-0.5 flex-shrink-0" />
@@ -450,11 +452,11 @@ export default function LandingPage() {
               <div className="flex items-start">
                 <FileText className="text-green-600 h-6 w-6 mr-3 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-foreground">The folder of JSON files generated by the Snapshot script</p>
+                  <p className="font-semibold text-foreground">The folder of JSON files produced by the Snapshot script</p>
                 </div>
               </div>
             </div>
-            <p className="text-muted-foreground">We analyze everything offline, generate the report + JIRA tickets, and permanently delete the raw files after delivery.</p>
+            <p className="text-muted-foreground">We analyze everything offline, generate your full report + JIRA tickets, and delete all raw files after delivery.</p>
           </Card>
 
           {/* Security-Friendly by Design */}
@@ -471,7 +473,7 @@ export default function LandingPage() {
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Shield className="h-6 w-6" />
                 </div>
-                <p className="font-semibold mb-1">No impersonation</p>
+                <p className="font-semibold mb-1">No external access required</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -484,12 +486,6 @@ export default function LandingPage() {
                   <Shield className="h-6 w-6" />
                 </div>
                 <p className="font-semibold mb-1">No privileged workloads</p>
-              </div>
-              <div className="text-center">
-                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Shield className="h-6 w-6" />
-                </div>
-                <p className="font-semibold mb-1">Zero third-party access</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -511,7 +507,7 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="mt-8 text-center">
-              <p className="text-xl font-semibold">Your cluster stays private. Your access stays private. Your security team stays happy.</p>
+              <p className="text-xl font-semibold">Your cluster stays private. Your credentials stay private. Your security team stays happy.</p>
             </div>
           </div>
         </div>
