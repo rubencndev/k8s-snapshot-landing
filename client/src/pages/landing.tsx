@@ -497,7 +497,7 @@ export default function LandingPage() {
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Shield className="h-6 w-6" />
                 </div>
-                <p className="font-semibold mb-1">Only JSON configuration files are shared</p>
+                <p className="font-semibold mb-1">Only sanitized JSON configuration files are shared</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
