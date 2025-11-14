@@ -456,7 +456,7 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-            <p className="text-muted-foreground">We analyze everything offline, generate your full report + JIRA tickets, and delete all raw files after delivery.</p>
+            <p className="text-muted-foreground">We analyze everything offline, generate your full report + JIRA tickets, and delete all raw files after delivery. No application logs, secrets, or live traffic data is ever collected.</p>
           </Card>
 
           {/* Security-Friendly by Design */}
