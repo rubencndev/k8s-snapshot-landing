@@ -282,7 +282,7 @@ export default function LandingPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Technical evidence bundle</h3>
-                  <p className="text-muted-foreground">CSV/JSON data from Kubecost, Goldilocks, Kube-bench, Kube-score.</p>
+                  <p className="text-muted-foreground">CSV/JSON data from Kubecost and Kube-bench.</p>
                 </div>
               </Card>
               
