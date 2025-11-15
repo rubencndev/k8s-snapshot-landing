@@ -108,6 +108,10 @@ export default function LandingPage() {
               </div>
             </div>
             
+            <p className="text-base text-muted-foreground mb-8">
+              The assessment is delivered in 1 week. Implementation typically takes 1–2 engineering sprints.
+            </p>
+            
             {/* Trust Badge - Zero Access */}
             <div className="flex items-center justify-center gap-2 mb-12 bg-green-50 border border-green-200 rounded-full px-6 py-3 max-w-md mx-auto">
               <Lock className="text-green-700 h-5 w-5" />
